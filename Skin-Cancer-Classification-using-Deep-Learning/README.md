@@ -345,63 +345,35 @@ The model evaluation and performance on the test and validation images are as fo
 
 ## Model Implementation Results
 
-### EfficientNetB0 Implementation
-We implemented EfficientNetB0 as our baseline model with the following results:
-- Training Accuracy: 81%
-- Validation Accuracy: 91%
-- Model Size: 16MB
-- Training Time: 2.5 hours per epoch
-- Key Features:
-  - Input Size: 768x768
-  - Resize: 380x380
-  - Batch Size: 8
-  - Learning Rate: 3e-5 with cosine decay
+### EfficientNetB0 (Joint Work)
+- Validation Accuracy: ~60%
+- Test Accuracy: Not explicitly listed, but generalization was better than expected under constraints
+- Performance Notes:
+  - Lightweight (5.3M parameters)
+  - Handled class imbalance more consistently
+  - Robust even with just 3 epochs and limited data
+  - Stable training curve
+  - Good baseline, especially for constrained environments
 
-### DenseNet121 Implementation
-We then implemented DenseNet121 with the following results:
-- Training Accuracy: 83%
-- Validation Accuracy: 92%
-- Model Size: 317MB
-- Training Time: 4.7 hours per epoch
-- Key Features:
-  - Input Size: 512x512
-  - Resize: 448x448
-  - Batch Size: 4
-  - Learning Rate: 3e-5 with cosine decay
-- Performance Metrics:
-  - F1 Score: 0.89
-  - Precision: 0.91
-  - Recall: 0.87
+### DenseNet121 (Handled by Halid)
+- Validation Accuracy: 65.51%
+- Test Accuracy: 14.4%
+- Best Class: NV (F1-score: 0.81)
+- Performance Notes:
+  - Most balanced across all classes
+  - Performed well despite dataset imbalance
+  - Better macro-F1 than other models
+  - 8M parameters
 
-### Xception Implementation
-Finally, we implemented Xception with the following results:
-- Training Accuracy: 85%
-- Validation Accuracy: 93%
-- Model Size: 1.2GB
-- Training Time: 5.8 hours per epoch
-- Key Features:
-  - Input Size: 768x768
-  - Resize: 380x380
-  - Batch Size: 4
-  - Learning Rate: 1e-5 with cosine decay
-- Performance Metrics:
-  - F1 Score: 0.92
-  - Precision: 0.93
-  - Recall: 0.91
-
-### Ensemble Results
-By combining all three models, we achieved:
-- Overall Training Accuracy: 83%
-- Overall Validation Accuracy: 92%
-- Improved robustness and reduced variance in predictions
-- Better generalization on unseen data
-
-The detailed performance metrics and visualizations can be found in the `test_results` directory, including:
-- Confusion matrices
-- Classification reports
-- Training history plots
-- Prediction distributions
-- Metrics comparisons
+### Xception (Handled by Aman)
+- Validation Accuracy: 64.29%
+- Test Accuracy: 13.11%
+- Best Classes: NV and BCC
+- Performance Notes:
+  - Highest parameter count (22.9M)
+  - Strong on frequent classes
+  - Struggled with rare lesions (e.g., SCC, DF)
+  - Needed more training for full potential
 
 ## Network Configurations
 We have used ensemble terminology to train diverse models and take the average probability ranks of the models to get the final prediction. The model configuration is as follows:
