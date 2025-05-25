@@ -1,0 +1,21 @@
+===== Model Evaluation Results for xception =====
+Accuracy: 0.6429
+Precision: 0.6254
+Recall: 0.6429
+F1 Score: 0.6137
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+          AK       0.33      0.41      0.36        32
+         BCC       0.49      0.58      0.53       125
+         BKL       0.44      0.27      0.33       101
+          DF       1.00      0.10      0.18        10
+         MEL       0.61      0.34      0.44       167
+          NV       0.72      0.89      0.80       516
+         SCC       0.20      0.04      0.07        24
+        VASC       1.00      0.25      0.40         8
+
+    accuracy                           0.64       983
+   macro avg       0.60      0.36      0.39       983
+weighted avg       0.63      0.64      0.61       983

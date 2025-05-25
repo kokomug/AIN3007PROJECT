@@ -1,0 +1,21 @@
+===== Model Evaluation Results for densenet121 =====
+Accuracy: 0.6551
+Precision: 0.6289
+Recall: 0.6551
+F1 Score: 0.6283
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+          AK       0.50      0.09      0.16        32
+         BCC       0.55      0.62      0.58       125
+         BKL       0.40      0.30      0.34       101
+          DF       1.00      0.10      0.18        10
+         MEL       0.53      0.46      0.49       167
+          NV       0.75      0.88      0.81       516
+         SCC       0.10      0.04      0.06        24
+        VASC       0.50      0.12      0.20         8
+
+    accuracy                           0.66       983
+   macro avg       0.54      0.33      0.35       983
+weighted avg       0.63      0.66      0.63       983

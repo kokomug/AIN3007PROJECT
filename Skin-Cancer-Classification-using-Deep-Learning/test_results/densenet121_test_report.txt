@@ -1,0 +1,28 @@
+===== Test Evaluation Results for densenet121 =====
+Test Accuracy: 0.1440
+Test Precision: 0.1467
+Test Recall: 0.1440
+Test F1 Score: 0.1355
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+          AK       0.19      0.10      0.13        97
+         BCC       0.21      0.11      0.14        90
+         BKL       0.13      0.14      0.14        98
+          DF       0.15      0.36      0.21       106
+         MEL       0.14      0.09      0.11        88
+          NV       0.10      0.08      0.09       103
+         SCC       0.11      0.10      0.11       101
+        VASC       0.15      0.15      0.15        95
+
+    accuracy                           0.14       778
+   macro avg       0.15      0.14      0.13       778
+weighted avg       0.15      0.14      0.14       778
+
+
+===== Training vs Test Comparison =====
+Training Accuracy: 0.6551 | Test Accuracy: 0.1440
+Training Precision: 0.6289 | Test Precision: 0.1467
+Training Recall: 0.6551 | Test Recall: 0.1440
+Training F1 Score: 0.6283 | Test F1 Score: 0.1355

@@ -1,0 +1,28 @@
+===== Test Evaluation Results for xception =====
+Test Accuracy: 0.1311
+Test Precision: 0.1246
+Test Recall: 0.1311
+Test F1 Score: 0.1171
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+          AK       0.14      0.07      0.10        97
+         BCC       0.15      0.22      0.18        90
+         BKL       0.14      0.07      0.10        98
+          DF       0.14      0.31      0.19       106
+         MEL       0.12      0.17      0.14        88
+          NV       0.09      0.08      0.08       103
+         SCC       0.13      0.10      0.11       101
+        VASC       0.07      0.02      0.03        95
+
+    accuracy                           0.13       778
+   macro avg       0.12      0.13      0.12       778
+weighted avg       0.12      0.13      0.12       778
+
+
+===== Training vs Test Comparison =====
+Training Accuracy: 0.6429 | Test Accuracy: 0.1311
+Training Precision: 0.6254 | Test Precision: 0.1246
+Training Recall: 0.6429 | Test Recall: 0.1311
+Training F1 Score: 0.6137 | Test F1 Score: 0.1171
